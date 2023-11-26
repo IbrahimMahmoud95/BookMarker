@@ -1,0 +1,65 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --WebsiteHeader:'Pacifico', cursive;
+    --MainPageColor:#a4b6c1;
+    --MainTextColor:#ebead9;
+    --SeconderyTextColor:#2e598f;
+    --BackgroudEffect:#940f15;
+    --ExtraordinaryTextColor:#0c2141;
+}
+::selection{
+    background-color: var(--BackgroudEffect);
+    color: var(--MainTextColor);
+}
+body{
+    background-color: var(--MainPageColor);
+}
+.HeaderContainer{
+    width: fit-content;
+}
+.WebsiteHeader{
+    color: var(--MainTextColor);
+    font-size: 3.2rem;
+    font-family: var(--WebsiteHeader);
+    letter-spacing:0.1rem;
+    z-index: 99;
+}
+.BackgroundEffect{
+    bottom: 20%;
+    transition: 0.7s ease-in-out;
+    background-color: var(--BackgroudEffect);
+    height: 30%;
+    z-index: 9;
+}
+.HeaderContainer:hover .BackgroundEffect{
+    height: 60%;
+}
+.Ruler{
+    height: 0.26rem;
+    background-image: url(../icon/BlackDot.png);
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-color:var(--MainPageColor);
+}
+.SubHeading{
+    width: fit-content;
+    background-image: linear-gradient(90deg,var(--BackgroudEffect),var(--SeconderyTextColor));
+    background-clip: text;
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+}
+.Red{
+    color: var(--BackgroudEffect);
+}
+.Blue{
+    color: var(--SeconderyTextColor);
+}
+.DarkBlue{
+    color: var(--ExtraordinaryTextColor);
+}

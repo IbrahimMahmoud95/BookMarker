@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon/bookmark.png" type="shourtcut x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <main class="container">
+        <section>
+            <div class="HeaderContainer position-relative  mx-auto p-1 my-5">
+                <h1 class="text-center WebsiteHeader  position-relative" >Bookmarker</h1>
+                <div class="BackgroundEffect position-absolute  start-0 end-0 ">
+                </div>
+            </div>
+            <div class="Ruler">
+            </div>
+            <div class="my-2 mx-auto text-center SubHeading ">
+                <h2 class="fs-3 "><i class="fa-solid fa-bookmark mx-1 Red "></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark mx-1 Blue"></i></h2>
+            </div>
+            <div class="mt-3 ">
+                <label for="WebsiteNameInput" class="DarkBlue fs-4 fw-bold mt-1 mb-1 "><i class="fa-solid fa-book-bookmark Red me-2"></i>Site Name</label>
+                <input class="mb-3 form-control" type="text" placeholder="Bookmark Name" id="WebsiteNameInput" required name="WebsiteName">
+                <label for="WebsiteURLInput" class="DarkBlue fs-4 fw-bold mt-1 mb-1"><i class="fa-solid fa-link Red me-2"></i>Site URL</label>
+                <input class="mb-3 form-control" type="text" placeholder="Website URL" id="WebsiteURLInput" required name="WebsiteURL">
+                <button class="btn btn-lg btn-danger px-5 d-block mx-auto my-2 " onclick="AddWebsite()">Submit</button>
+            </div>
+            <div class="Ruler my-3">
+            </div>
+            <input type="search" class="form-control my-3 " placeholder="Search In Your Booked Websites" oninput="SearchedWebsites(this.value)"  >
+            <table class="table text-center fw-bolder">
+                <thead>
+                    <td>Index</td>
+                    <td>Website Name</td>
+                    <td>Visit</td>
+                    <td>Delete</td>
+                </thead>
+                <tbody id="TableInfo">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
